@@ -1,6 +1,11 @@
 # Arron McCrory Photography Website
 
-A modern, responsive, high-converting portfolio website crafted for professional photographers specializing in:
+[![Live Website](https://img.shields.io/badge/Live%20Website-GitHub%20Pages-success?style=flat-square&logo=github)](https://arron21.github.io/arron-mccrory-photography/)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue?style=flat-square&logo=github)](https://github.com/arron21/arron-mccrory-photography)
+
+**Live URL**: [https://arron21.github.io/arron-mccrory-photography/](https://arron21.github.io/arron-mccrory-photography/)
+
+A modern, responsive, high-converting portfolio website crafted for professional photographer **Arron McCrory**, specializing in:
 - **Real Estate Photography** (MLS ready, architecture, HDR twilight & interiors)
 - **Graduation Photos** (Senior portraits, campus celebrations, cap & gown)
 - **Baby & Newborn Photo Shoots** (Milestones, cozy studio & lifestyle sessions)
