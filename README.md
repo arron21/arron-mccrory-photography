@@ -1,4 +1,4 @@
-# Aura Lens Photography Website
+# Arron McCrory Photography Website
 
 A modern, responsive, high-converting portfolio website crafted for professional photographers specializing in:
 - **Real Estate Photography** (MLS ready, architecture, HDR twilight & interiors)
