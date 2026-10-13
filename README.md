@@ -6,6 +6,8 @@
 **Live URL**: [https://arron21.github.io/arron-mccrory-photography/](https://arron21.github.io/arron-mccrory-photography/)
 
 A modern, responsive, high-converting portfolio website crafted for professional photographer **Arron McCrory**, specializing in:
+- **Weddings & Elopements** (Candid emotions, garden celebrations, romantic storytelling)
+- **Professional Headshots & Branding** (Executive portraits, creative editorial styling)
 - **Real Estate Photography** (MLS ready, architecture, HDR twilight & interiors)
 - **Graduation Photos** (Senior portraits, campus celebrations, cap & gown)
 - **Baby & Newborn Photo Shoots** (Milestones, cozy studio & lifestyle sessions)

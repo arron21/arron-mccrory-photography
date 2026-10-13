@@ -107,6 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Readable category text
     let catLabel = 'Photography';
+    if (category === 'weddings') catLabel = 'Wedding & Elopement';
+    if (category === 'headshots') catLabel = 'Professional Headshot & Branding';
     if (category === 'real-estate') catLabel = 'Real Estate Showcase';
     if (category === 'graduation') catLabel = 'Graduation Portrait';
     if (category === 'baby') catLabel = 'Baby & Newborn Session';

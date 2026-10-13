@@ -50,7 +50,7 @@
       </div>
       <h1 class="hero-title">Timeless Imagery for Life's Greatest Milestones & Spaces</h1>
       <p class="hero-subtitle">
-        Specializing in high-impact Real Estate showcases, unforgettable Graduation moments, and gentle Newborn & Baby sessions.
+        Specializing in heartfelt Weddings, polished Professional Headshots, architectural Real Estate, celebratory Graduation portraits, and tender Newborn sessions.
       </p>
       <div class="hero-cta-group">
         <a href="#portfolio" class="btn btn-primary">
@@ -63,6 +63,11 @@
 
       <div class="hero-metrics">
         <div class="metric-item">
+          <span class="metric-number">100+</span>
+          <span class="metric-label">Weddings & Shoots</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
           <span class="metric-number">450+</span>
           <span class="metric-label">Properties Photographed</span>
         </div>
@@ -70,11 +75,6 @@
         <div class="metric-item">
           <span class="metric-number">300+</span>
           <span class="metric-label">Grads Celebrated</span>
-        </div>
-        <div class="metric-divider"></div>
-        <div class="metric-item">
-          <span class="metric-number">200+</span>
-          <span class="metric-label">Newborn Sessions</span>
         </div>
         <div class="metric-divider"></div>
         <div class="metric-item">
@@ -88,6 +88,20 @@
   <!-- Specialties Quick Banner -->
   <section class="specialties-banner">
     <div class="container specialties-grid">
+      <div class="specialty-card" data-filter="weddings">
+        <div class="specialty-icon"><i class="ph ph-heart"></i></div>
+        <h3>Weddings</h3>
+        <p>Candid storytelling, romantic garden portraits, emotional receptions, and timeless elopement moments.</p>
+        <span class="specialty-link">View weddings <i class="ph ph-arrow-right"></i></span>
+      </div>
+
+      <div class="specialty-card" data-filter="headshots">
+        <div class="specialty-icon"><i class="ph ph-user-focus"></i></div>
+        <h3>Headshots & Branding</h3>
+        <p>Confident, approachable executive portraits and editorial headshots that elevate your professional presence.</p>
+        <span class="specialty-link">View headshots <i class="ph ph-arrow-right"></i></span>
+      </div>
+
       <div class="specialty-card" data-filter="real-estate">
         <div class="specialty-icon"><i class="ph ph-buildings"></i></div>
         <h3>Real Estate</h3>
@@ -125,6 +139,12 @@
       <!-- Filter Controls -->
       <div class="filter-bar">
         <button class="filter-btn active" data-filter="all">All Works</button>
+        <button class="filter-btn" data-filter="weddings">
+          <i class="ph ph-heart"></i> Weddings
+        </button>
+        <button class="filter-btn" data-filter="headshots">
+          <i class="ph ph-user-focus"></i> Headshots
+        </button>
         <button class="filter-btn" data-filter="real-estate">
           <i class="ph ph-house-line"></i> Real Estate
         </button>
@@ -138,6 +158,81 @@
 
       <!-- Gallery Grid -->
       <div class="gallery-grid" id="galleryGrid">
+        
+        <!-- Wedding 1 (Authentic User Upload) -->
+        <article class="gallery-item" data-category="weddings" data-title="Joyful Reception Candid" data-desc="Natural, unscripted celebration moments capturing genuine emotion, laughter, and timeless connection." data-img="./images/wedding-candid-laugh.jpg">
+          <div class="gallery-card">
+            <img src="./images/wedding-candid-laugh.jpg" alt="Joyful wedding couple laughing together" loading="lazy">
+            <div class="gallery-badge"><i class="ph ph-heart"></i> Wedding</div>
+            <div class="gallery-overlay">
+              <div class="gallery-meta">
+                <h4>Joyful Reception Candid</h4>
+                <p>Black & White Documentary Wedding</p>
+              </div>
+              <span class="gallery-expand-btn"><i class="ph ph-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Wedding 2 (Authentic User Upload) -->
+        <article class="gallery-item" data-category="weddings" data-title="Sunlit Garden Toast" data-desc="Vibrant outdoor celebration portrait capturing relaxed bridal moments and joyful champagne toasts." data-img="./images/wedding-garden-toast.jpg">
+          <div class="gallery-card">
+            <img src="./images/wedding-garden-toast.jpg" alt="Wedding couple toast in lush garden" loading="lazy">
+            <div class="gallery-badge"><i class="ph ph-heart"></i> Wedding</div>
+            <div class="gallery-overlay">
+              <div class="gallery-meta">
+                <h4>Sunlit Garden Toast</h4>
+                <p>Outdoor Garden Celebration</p>
+              </div>
+              <span class="gallery-expand-btn"><i class="ph ph-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Wedding 3 (Authentic User Upload) -->
+        <article class="gallery-item" data-category="weddings" data-title="Tender Garden Romance" data-desc="Intimate monochrome couple portrait showcasing sweet, unhurried romance and quiet devotion." data-img="./images/wedding-bench-kiss.jpg">
+          <div class="gallery-card">
+            <img src="./images/wedding-bench-kiss.jpg" alt="Bride kissing groom gently on garden bench" loading="lazy">
+            <div class="gallery-badge"><i class="ph ph-heart"></i> Wedding</div>
+            <div class="gallery-overlay">
+              <div class="gallery-meta">
+                <h4>Tender Garden Romance</h4>
+                <p>Romantic Garden Bench Portrait</p>
+              </div>
+              <span class="gallery-expand-btn"><i class="ph ph-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Headshot 1 (Authentic User Upload) -->
+        <article class="gallery-item" data-category="headshots" data-title="Editorial Creative Headshot" data-desc="High-impact portrait with lush natural greenery backdrop and contemporary styling, perfect for personal branding." data-img="./images/headshot-editorial.jpg">
+          <div class="gallery-card">
+            <img src="./images/headshot-editorial.jpg" alt="Editorial professional headshot with natural green foliage" loading="lazy">
+            <div class="gallery-badge"><i class="ph ph-user-focus"></i> Headshot</div>
+            <div class="gallery-overlay">
+              <div class="gallery-meta">
+                <h4>Editorial Creative Headshot</h4>
+                <p>Creative & Personal Branding</p>
+              </div>
+              <span class="gallery-expand-btn"><i class="ph ph-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Headshot 2 (Authentic User Upload) -->
+        <article class="gallery-item" data-category="headshots" data-title="Executive & Personal Branding" data-desc="Warm, approachable, and polished professional headshot designed for LinkedIn, executive bios, and portfolios." data-img="./images/headshot-natural-portrait.jpg">
+          <div class="gallery-card">
+            <img src="./images/headshot-natural-portrait.jpg" alt="Executive headshot portrait smiling to camera" loading="lazy">
+            <div class="gallery-badge"><i class="ph ph-user-focus"></i> Headshot</div>
+            <div class="gallery-overlay">
+              <div class="gallery-meta">
+                <h4>Executive & Personal Branding</h4>
+                <p>Corporate & LinkedIn Portrait</p>
+              </div>
+              <span class="gallery-expand-btn"><i class="ph ph-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+        </article>
         
         <!-- Real Estate 1 -->
         <article class="gallery-item" data-category="real-estate" data-title="Mid-Century Modern Villa" data-desc="Natural light interior photography highlighting vaulted ceilings and open-concept architecture." data-img="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80">
@@ -518,6 +613,8 @@
               <label for="shootType">Type of Photography *</label>
               <select id="shootType" name="shootType" required>
                 <option value="" disabled selected>Select photography type...</option>
+                <option value="Wedding Photography">Weddings & Elopements</option>
+                <option value="Professional Headshots">Professional Headshots & Branding</option>
                 <option value="Real Estate Photography">Real Estate Photography</option>
                 <option value="Graduation Photos">Graduation Photos</option>
                 <option value="Baby & Newborn Photo Shoot">Baby & Newborn Photo Shoot</option>
