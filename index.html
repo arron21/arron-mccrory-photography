@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Lens Photography | Real Estate, Graduation & Baby Portraits</title>
+  <meta name="description" content="Professional photography services specializing in luxury real estate, milestone graduation portraits, and tender baby photo shoots. Book your session today.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo">
+        <span class="logo-mark"><i class="ph ph-aperture"></i></span>
+        <span class="brand-text">AURA<strong>LENS</strong></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#services" class="nav-link">Services & Pricing</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#testimonials" class="nav-link">Client Love</a>
+        <a href="#contact" class="nav-link nav-btn-primary">Book a Shoot</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        <i class="ph ph-list" id="toggleIcon"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="badge-tag">
+        <i class="ph ph-sparkle"></i> Capturing Moments & Architecture
+      </div>
+      <h1 class="hero-title">Timeless Imagery for Life's Greatest Milestones & Spaces</h1>
+      <p class="hero-subtitle">
+        Specializing in high-impact Real Estate showcases, unforgettable Graduation moments, and gentle Newborn & Baby sessions.
+      </p>
+      <div class="hero-cta-group">
+        <a href="#portfolio" class="btn btn-primary">
+          <i class="ph ph-images"></i> Explore Portfolio
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <i class="ph ph-calendar-plus"></i> Request Booking
+        </a>
+      </div>
+
+      <div class="hero-metrics">
+        <div class="metric-item">
+          <span class="metric-number">450+</span>
+          <span class="metric-label">Properties Photographed</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <span class="metric-number">300+</span>
+          <span class="metric-label">Grads Celebrated</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <span class="metric-number">200+</span>
+          <span class="metric-label">Newborn Sessions</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <span class="metric-number">5.0 ★</span>
+          <span class="metric-label">Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialties Quick Banner -->
+  <section class="specialties-banner">
+    <div class="container specialties-grid">
+      <div class="specialty-card" data-filter="real-estate">
+        <div class="specialty-icon"><i class="ph ph-buildings"></i></div>
+        <h3>Real Estate</h3>
+        <p>Architectural interior & exterior photography, twilight shots, and staging perspectives that sell listings fast.</p>
+        <span class="specialty-link">View listings <i class="ph ph-arrow-right"></i></span>
+      </div>
+
+      <div class="specialty-card" data-filter="graduation">
+        <div class="specialty-icon"><i class="ph ph-graduation-cap"></i></div>
+        <h3>Graduation</h3>
+        <p>High-energy campus sessions, celebratory champagne pops, and timeless cap & gown portraits commemorating your achievement.</p>
+        <span class="specialty-link">View portraits <i class="ph ph-arrow-right"></i></span>
+      </div>
+
+      <div class="specialty-card" data-filter="baby">
+        <div class="specialty-icon"><i class="ph ph-baby"></i></div>
+        <h3>Baby & Newborn</h3>
+        <p>Warm, patient, and cozy sessions documenting tiny yawns, tender milestones, and early family bonds.</p>
+        <span class="specialty-link">View gallery <i class="ph ph-arrow-right"></i></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio-section" id="portfolio">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Visual Stories</span>
+        <h2 class="section-title">Selected Portfolio Work</h2>
+        <p class="section-description">
+          Click any photograph to view high-resolution details, settings, and full aspect ratios.
+        </p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Works</button>
+        <button class="filter-btn" data-filter="real-estate">
+          <i class="ph ph-house-line"></i> Real Estate
+        </button>
+        <button class="filter-btn" data-filter="graduation">
+          <i class="ph ph-student"></i> Graduation
+        </button>
+        <button class="filter-btn" data-filter="baby">
+          <i class="ph ph-baby"></i> Baby & Newborn
+        </button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+        
+        <!-- Real Estate 1 -->
+        <article class="gallery-item" data-category="real-estate" data-title="Mid-Century Modern Villa" data-desc="Natural light interior photography highlighting vaulted ceilings and open-concept architecture." data-img="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80">
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Mid-Century Modern Living Room" loading="lazy">
+            <div class="gallery-badge"><i class="ph ph-buildings"></i> Real Estate</div>
+            <div class="gallery-overlay">
+              <div class="gallery-meta">
+                <h4>Mid-Century Modern Villa</h4>
+                <p>Architectural & Interior Staging</p>
+              </div>
+              <span class="gallery-expand-btn"><i class="ph ph-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Graduation 1 -->
+        <article class="gallery-item" data-category="graduation" data-title="Commencement Joy" data-desc="Golden hour celebration portrait capturing the joy and relief of graduation day." data-img="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80">
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="Graduation Cap Celebration" loading="lazy">
+            <div class="gallery-badge"><i class="ph ph-graduation-cap"></i> Graduation</div>
+            <div class="gallery-overlay">
+              <div class="gallery-meta">
+                <h4>Commencement Joy</h4>
+                <p>Campus Milestone Session</p>
+              </div>
+              <span class="gallery-expand-btn"><i class="ph ph-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Baby 1 -->
+        <article class="gallery-item" data-category="baby" data-title="Gentle Morning Slumber" data-desc="Studio newborn photography focusing on tranquil poses, organic textures, and peaceful moments." data-img="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=1600&q=80">
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=80" alt="Newborn Sleeping in Swaddle" loading="lazy">
+            <div class="gallery-badge"><i class="ph ph-baby"></i> Baby & Newborn</div>
+            <div class="gallery-overlay">
+              <div class="gallery-meta">
+                <h4>Gentle Morning Slumber</h4>
+                <p>2-Week Newborn Studio Portrait</p>
+              </div>
+              <span class="gallery-expand-btn"><i class="ph ph-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Real Estate 2 -->
+        <article class="gallery-item" data-category="real-estate" data-title="Luxury Chef's Kitchen" data-desc="Balanced ambient and fill lighting showcasing custom marble islands and pendant fixtures." data-img="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80">
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Modern Kitchen Interior" loading="lazy">
+            <div class="gallery-badge"><i class="ph ph-buildings"></i> Real Estate</div>
+            <div class="gallery-overlay">
+              <div class="gallery-meta">
+                <h4>Luxury Chef's Kitchen</h4>
+                <p>Commercial Real Estate Feature</p>
+              </div>
+              <span class="gallery-expand-btn"><i class="ph ph-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Graduation 2 -->
+        <article class="gallery-item" data-category="graduation" data-title="The Next Chapter" data-desc="Classic cap and gown portrait framed by ivy stone university corridors." data-img="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1600&q=80">
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Graduate Portrait" loading="lazy">
+            <div class="gallery-badge"><i class="ph ph-graduation-cap"></i> Graduation</div>
+            <div class="gallery-overlay">
+              <div class="gallery-meta">
+                <h4>The Next Chapter</h4>
+                <p>Individual Senior Portrait</p>
+              </div>
+              <span class="gallery-expand-btn"><i class="ph ph-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Baby 2 -->
+        <article class="gallery-item" data-category="baby" data-title="First Smiles & Discovery" data-desc="Lifestyle milestone shoot capturing candid interactions between parents and their 6-month-old." data-img="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=1600&q=80">
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=800&q=80" alt="Smiling baby in natural light" loading="lazy">
+            <div class="gallery-badge"><i class="ph ph-baby"></i> Baby & Newborn</div>
+            <div class="gallery-overlay">
+              <div class="gallery-meta">
+                <h4>First Smiles & Discovery</h4>
+                <p>6-Month Milestone Session</p>
+              </div>
+              <span class="gallery-expand-btn"><i class="ph ph-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Real Estate 3 -->
+        <article class="gallery-item" data-category="real-estate" data-title="Twilight Poolside Terrace" data-desc="Exterior twilight session timed precisely to balance ambient sky glow with glowing warm architectural lights." data-img="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80">
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Twilight Architecture Exterior" loading="lazy">
+            <div class="gallery-badge"><i class="ph ph-buildings"></i> Real Estate</div>
+            <div class="gallery-overlay">
+              <div class="gallery-meta">
+                <h4>Twilight Poolside Terrace</h4>
+                <p>Twilight Exterior Shoot</p>
+              </div>
+              <span class="gallery-expand-btn"><i class="ph ph-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Graduation 3 -->
+        <article class="gallery-item" data-category="graduation" data-title="Tassel & Triumphs" data-desc="Friends and cohort celebration session capturing shared laughs, diplomas, and future ambitions." data-img="https://images.unsplash.com/photo-1627556704290-2b1f5853ff78?auto=format&fit=crop&w=1600&q=80">
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1627556704290-2b1f5853ff78?auto=format&fit=crop&w=800&q=80" alt="Graduation friends group portrait" loading="lazy">
+            <div class="gallery-badge"><i class="ph ph-graduation-cap"></i> Graduation</div>
+            <div class="gallery-overlay">
+              <div class="gallery-meta">
+                <h4>Tassel & Triumphs</h4>
+                <p>Group Graduation Session</p>
+              </div>
+              <span class="gallery-expand-btn"><i class="ph ph-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Baby 3 -->
+        <article class="gallery-item" data-category="baby" data-title="Tender Hands, Pure Heart" data-desc="Macro detail photography recording tiny fingers, toes, and intimate family snuggles." data-img="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1600&q=80">
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=80" alt="Baby hands holding parent's finger" loading="lazy">
+            <div class="gallery-badge"><i class="ph ph-baby"></i> Baby & Newborn</div>
+            <div class="gallery-overlay">
+              <div class="gallery-meta">
+                <h4>Tender Hands, Pure Heart</h4>
+                <p>In-Home Lifestyle Session</p>
+              </div>
+              <span class="gallery-expand-btn"><i class="ph ph-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & Packages Section -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Transparent Offerings</span>
+        <h2 class="section-title">Photography Packages & Pricing</h2>
+        <p class="section-description">
+          Each package includes calibrated color grading, high-resolution downloads, and personal print rights.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Real Estate Package -->
+        <div class="pricing-card">
+          <div class="pricing-tag">MLS & Marketing Ready</div>
+          <div class="pricing-icon"><i class="ph ph-house"></i></div>
+          <h3 class="pricing-title">Real Estate Showcase</h3>
+          <p class="pricing-summary">Designed for real estate agents, architects, and Airbnb hosts looking to elevate their listing value.</p>
+          <div class="pricing-price">
+            <span class="currency">$</span>
+            <span class="amount">275</span>
+            <span class="period">/ starting rate</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="ph ph-check-circle"></i> Up to 2,500 sq. ft. coverage</li>
+            <li><i class="ph ph-check-circle"></i> 25–35 HDR blended interior & exterior photos</li>
+            <li><i class="ph ph-check-circle"></i> Blue-sky replacement & lawn greening</li>
+            <li><i class="ph ph-check-circle"></i> Rapid 24-hour turnaround guaranteed</li>
+            <li><i class="ph ph-check-circle"></i> Print and web MLS-optimized sizes</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline" data-service="Real Estate Photography">Select Real Estate</a>
+        </div>
+
+        <!-- Graduation Package (Featured) -->
+        <div class="pricing-card featured">
+          <div class="pricing-badge-popular">Most Popular</div>
+          <div class="pricing-tag">Milestone Memory</div>
+          <div class="pricing-icon"><i class="ph ph-graduation-cap"></i></div>
+          <h3 class="pricing-title">Graduation Portraits</h3>
+          <p class="pricing-summary">Celebrate your academic success with cinematic, confidence-boosting portraits on campus.</p>
+          <div class="pricing-price">
+            <span class="currency">$</span>
+            <span class="amount">350</span>
+            <span class="period">/ session</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="ph ph-check-circle"></i> 60–90 minute campus session</li>
+            <li><i class="ph ph-check-circle"></i> Up to 2 outfit changes</li>
+            <li><i class="ph ph-check-circle"></i> 25 carefully retouched portraits</li>
+            <li><i class="ph ph-check-circle"></i> Group shots with family or up to 2 friends</li>
+            <li><i class="ph ph-check-circle"></i> Private online download gallery</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" data-service="Graduation Photos">Book Graduation</a>
+        </div>
+
+        <!-- Baby / Newborn Package -->
+        <div class="pricing-card">
+          <div class="pricing-tag">Tender Milestones</div>
+          <div class="pricing-icon"><i class="ph ph-baby"></i></div>
+          <h3 class="pricing-title">Newborn & Baby Studio</h3>
+          <p class="pricing-summary">A relaxed, warm, and zero-rush session in the comfort of your home or our climate-controlled studio.</p>
+          <div class="pricing-price">
+            <span class="currency">$</span>
+            <span class="amount">425</span>
+            <span class="period">/ session</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="ph ph-check-circle"></i> 2–3 hours patient session (feeding breaks included)</li>
+            <li><i class="ph ph-check-circle"></i> Curated props, wraps, and sanitized blankets</li>
+            <li><i class="ph ph-check-circle"></i> Parent & sibling portrait inclusions</li>
+            <li><i class="ph ph-check-circle"></i> 20 handcrafted magazine-grade edits</li>
+            <li><i class="ph ph-check-circle"></i> $50 heirloom print credit included</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline" data-service="Baby & Newborn Photo Shoot">Select Baby Shoot</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-image-wrapper">
+        <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=900&q=80" alt="Photographer with professional mirrorless camera gear" class="about-img">
+        <div class="about-badge-floating">
+          <span class="badge-num">10+</span>
+          <span class="badge-lbl">Years Behind The Lens</span>
+        </div>
+      </div>
+
+      <div class="about-text-content">
+        <span class="section-subtitle">Meet Your Photographer</span>
+        <h2 class="section-title">Hi, I'm Alex Rivera.</h2>
+        <p class="lead-text">
+          Whether it’s capturing the architectural symmetry of a multimillion-dollar home, the unbridled elation of tossing a graduation cap, or the fragile sweetness of a newborn's first days—my mission is to make every shot feel vibrant, authentic, and lasting.
+        </p>
+        <p>
+          I bring professional full-frame cameras, prime lenses, portable studio lighting, and an easygoing, direction-friendly energy to every shoot. You never have to worry about feeling awkward in front of the camera—I guide you through every pose.
+        </p>
+
+        <div class="about-features">
+          <div class="feature-item">
+            <i class="ph ph-lightning"></i>
+            <div>
+              <strong>Rapid Turnarounds</strong>
+              <span>MLS photos within 24 hours, portrait previews within 48 hours.</span>
+            </div>
+          </div>
+          <div class="feature-item">
+            <i class="ph ph-shield-check"></i>
+            <div>
+              <strong>Fully Insured & Certified</strong>
+              <span>Commercial liability insurance and safety-certified newborn posing.</span>
+            </div>
+          </div>
+          <div class="feature-item">
+            <i class="ph ph-heart"></i>
+            <div>
+              <strong>Client-Centered Experience</strong>
+              <span>From moodboard consultation to print ordering, I take care of every detail.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Client Experiences</span>
+        <h2 class="section-title">Kind Words From My Clients</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="quote">"Alex’s real estate photography took my listings from getting lukewarm traffic to receiving multiple offers over asking in the first weekend. The twilight shots in particular were simply breathtaking."</p>
+          <div class="client-info">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Marcus Vance" class="client-avatar">
+            <div>
+              <strong>Marcus Vance</strong>
+              <span>Principal Broker, Premier Realty Group</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="quote">"I was so nervous for my graduation photos, but Alex made me feel so confident and celebrated! The pictures captured my happiness and pride so naturally. My parents framed three of them immediately!"</p>
+          <div class="client-info">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Elena Rostova" class="client-avatar">
+            <div>
+              <strong>Elena Rostova</strong>
+              <span>Stanford University Class of '24</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="quote">"Handling an 11-day-old infant takes enormous patience. Alex was calm, gentle, and created a warm, safe sanctuary for our baby girl. We will cherish these portraits for the rest of our lives."</p>
+          <div class="client-info">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="David & Sarah Chen" class="client-avatar">
+            <div>
+              <strong>Sarah & David Chen</strong>
+              <span>Proud New Parents</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking / Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container contact-container">
+      <div class="contact-info-panel">
+        <span class="section-subtitle">Let's Connect</span>
+        <h2 class="section-title">Ready to Book Your Shoot?</h2>
+        <p>Tell me about your project, vision, or desired shoot date. I reply to all inquiries within 24 hours.</p>
+
+        <div class="contact-methods">
+          <div class="contact-method-item">
+            <div class="method-icon"><i class="ph ph-phone-call"></i></div>
+            <div>
+              <span class="method-label">Call or Text</span>
+              <a href="tel:+15552345678" class="method-value">(555) 234-5678</a>
+            </div>
+          </div>
+
+          <div class="contact-method-item">
+            <div class="method-icon"><i class="ph ph-envelope-simple"></i></div>
+            <div>
+              <span class="method-label">Email</span>
+              <a href="mailto:hello@auralensphotography.com" class="method-value">hello@auralensphotography.com</a>
+            </div>
+          </div>
+
+          <div class="contact-method-item">
+            <div class="method-icon"><i class="ph ph-map-pin"></i></div>
+            <div>
+              <span class="method-label">Studio Location</span>
+              <span class="method-value">Available across Greater Metro Area & Travel</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+          <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="ph ph-pinterest-logo"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+        </div>
+      </div>
+
+      <!-- Booking Form -->
+      <div class="contact-form-panel">
+        <form id="bookingForm" class="booking-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName">Your Full Name *</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Jane Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+            </div>
+            <div class="form-group">
+              <label for="shootType">Type of Photography *</label>
+              <select id="shootType" name="shootType" required>
+                <option value="" disabled selected>Select photography type...</option>
+                <option value="Real Estate Photography">Real Estate Photography</option>
+                <option value="Graduation Photos">Graduation Photos</option>
+                <option value="Baby & Newborn Photo Shoot">Baby & Newborn Photo Shoot</option>
+                <option value="Family Portrait">Family Portrait</option>
+                <option value="Commercial / Other">Commercial / Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="preferredDate">Target Date / Timeframe</label>
+              <input type="date" id="preferredDate" name="preferredDate">
+            </div>
+            <div class="form-group">
+              <label for="location">Location / Address</label>
+              <input type="text" id="location" name="location" placeholder="City, campus, or property address">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell me about your vision or requirements *</label>
+            <textarea id="message" name="message" rows="4" placeholder="Mention square footage, number of people, preferred styles, or any deadlines..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+            <i class="ph ph-paper-plane-tilt"></i> Send Inquiry & Check Availability
+          </button>
+
+          <p class="form-privacy-note">
+            <i class="ph ph-lock-key"></i> No spam ever. Your information is confidential and used solely for your shoot inquiry.
+          </p>
+        </form>
+
+        <!-- Success Message Toast/State -->
+        <div class="form-success-message" id="formSuccessMessage" style="display: none;">
+          <div class="success-icon"><i class="ph ph-check-circle"></i></div>
+          <h3>Inquiry Sent Successfully!</h3>
+          <p>Thank you for reaching out! I've received your shoot request and will review my schedule and get back to you within 24 hours.</p>
+          <button class="btn btn-secondary" id="resetFormBtn">Send Another Inquiry</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" role="dialog">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">
+        <i class="ph ph-x"></i>
+      </button>
+      <div class="lightbox-img-wrapper">
+        <img id="lightboxImg" src="" alt="High resolution preview">
+      </div>
+      <div class="lightbox-info">
+        <span class="lightbox-category" id="lightboxCategory"></span>
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDesc"></p>
+        <a href="#contact" class="btn btn-primary btn-sm" id="lightboxBookBtn">
+          <i class="ph ph-camera"></i> Inquire About A Similar Shoot
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="brand-text">AURA<strong>LENS</strong> PHOTOGRAPHY</span>
+        <p>Premium Real Estate, Graduation, and Baby photography that commands attention and preserves memories.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Portfolio Gallery</a></li>
+          <li><a href="#services">Packages & Pricing</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contact">Contact & Booking</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <p><i class="ph ph-phone"></i> (555) 234-5678</p>
+        <p><i class="ph ph-envelope"></i> hello@auralensphotography.com</p>
+        <p><i class="ph ph-clock"></i> Mon - Sat: 8:00 AM - 7:00 PM</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Aura Lens Photography. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <span>&bull;</span>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
