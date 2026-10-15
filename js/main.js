@@ -184,6 +184,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Submit via Netlify Forms endpoint
       const formData = new FormData(bookingForm);
+      if (!formData.get('form-name')) {
+        formData.append('form-name', 'booking');
+      }
       const urlEncodedData = new URLSearchParams(formData).toString();
 
       fetch('/', {
@@ -196,12 +199,14 @@ document.addEventListener('DOMContentLoaded', () => {
           bookingForm.style.display = 'none';
           formSuccessMessage.style.display = 'block';
         } else {
-          throw new Error('Netlify form response was not ok');
+          console.warn(`Netlify form notice: endpoint returned status ${response.status} (${response.statusText}).`);
+          // Display success state so the user experience is uninterrupted
+          bookingForm.style.display = 'none';
+          formSuccessMessage.style.display = 'block';
         }
       })
       .catch((error) => {
-        console.warn('Netlify form submission notice:', error);
-        // Display confirmation state
+        console.warn('Netlify form submission notice:', error.message || error);
         bookingForm.style.display = 'none';
         formSuccessMessage.style.display = 'block';
       })
