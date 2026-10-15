@@ -628,7 +628,7 @@
             <div class="method-icon"><i class="ph ph-phone-call"></i></div>
             <div>
               <span class="method-label">Call or Text</span>
-              <a href="tel:+15552345678" class="method-value">(555) 234-5678</a>
+              <a href="tel:+19493066039" class="method-value">(949) 306-6039</a>
             </div>
           </div>
 
@@ -644,16 +644,9 @@
             <div class="method-icon"><i class="ph ph-map-pin"></i></div>
             <div>
               <span class="method-label">Studio Location</span>
-              <span class="method-value">Available across Greater Metro Area & Travel</span>
+              <span class="method-value">Available across Orange County and Los Angeles</span>
             </div>
           </div>
-        </div>
-
-        <div class="social-links">
-          <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
-          <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
-          <a href="#" aria-label="Pinterest"><i class="ph ph-pinterest-logo"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
         </div>
       </div>
 
@@ -674,7 +667,7 @@
           <div class="form-row">
             <div class="form-group">
               <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+              <input type="tel" id="phone" name="phone" placeholder="(949) 000-0000">
             </div>
             <div class="form-group">
               <label for="shootType">Type of Photography *</label>
@@ -755,7 +748,7 @@
     <div class="container footer-content">
       <div class="footer-brand">
         <span class="brand-text">ARRON<strong>MCCRORY</strong> PHOTOGRAPHY</span>
-        <p>Premium Real Estate, Graduation, and Baby photography that commands attention and preserves memories.</p>
+        <p>Premium Weddings, Professional Headshots, and Real Estate photography across Orange County and Los Angeles.</p>
       </div>
       <div class="footer-links">
         <h4>Quick Navigation</h4>
@@ -769,20 +762,135 @@
       </div>
       <div class="footer-contact">
         <h4>Get In Touch</h4>
-        <p><i class="ph ph-phone"></i> (555) 234-5678</p>
+        <p><i class="ph ph-phone"></i> <a href="tel:+19493066039" class="footer-contact-link">(949) 306-6039</a></p>
         <p><i class="ph ph-envelope"></i> arronmccrory@gmail.com</p>
-        <p><i class="ph ph-clock"></i> Mon - Sat: 8:00 AM - 7:00 PM</p>
+        <p><i class="ph ph-map-pin"></i> Orange County &amp; Los Angeles, CA</p>
       </div>
     </div>
     <div class="container footer-bottom">
       <p>&copy; 2026 Arron McCrory Photography. All rights reserved.</p>
       <div class="footer-legal">
-        <a href="#">Privacy Policy</a>
+        <button type="button" class="footer-legal-btn" id="openPrivacyBtn">Privacy Policy</button>
         <span>&bull;</span>
-        <a href="#">Terms of Service</a>
+        <button type="button" class="footer-legal-btn" id="openTermsBtn">Terms of Service</button>
       </div>
     </div>
   </footer>
+
+  <!-- Legal Modal (Privacy Policy & Terms of Service) -->
+  <div class="legal-modal" id="legalModal" aria-hidden="true" role="dialog" aria-labelledby="legalModalTitle">
+    <div class="legal-backdrop" id="legalBackdrop"></div>
+    <div class="legal-container">
+      <div class="legal-header">
+        <div class="legal-tabs" role="tablist">
+          <button type="button" class="legal-tab-btn active" id="tabPrivacyBtn" role="tab" aria-selected="true" aria-controls="privacyPanel">Privacy Policy</button>
+          <button type="button" class="legal-tab-btn" id="tabTermsBtn" role="tab" aria-selected="false" aria-controls="termsPanel">Terms of Service</button>
+        </div>
+        <button type="button" class="legal-close-btn" id="legalCloseBtn" aria-label="Close dialog">
+          <i class="ph ph-x"></i>
+        </button>
+      </div>
+
+      <div class="legal-body">
+        <!-- Privacy Policy Panel -->
+        <article class="legal-panel active" id="privacyPanel" role="tabpanel" aria-labelledby="tabPrivacyBtn">
+          <h2 id="legalModalTitle">Privacy Policy</h2>
+          <p class="legal-meta">Effective Date: October 15, 2026</p>
+          <p>Arron McCrory Photography ("we," "our," or "us") respects your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you visit our website, communicate with us, or retain our professional photography services across Orange County, Los Angeles, and surrounding areas.</p>
+
+          <h3>1. Information We Collect</h3>
+          <p>We collect information that you voluntarily provide when inquiring about or booking photography sessions, including:</p>
+          <ul>
+            <li><strong>Contact Details:</strong> Full name, email address, phone number, and preferred contact times.</li>
+            <li><strong>Session &amp; Event Details:</strong> Desired shoot dates, venue locations, property addresses for real estate listings, timeline notes, and creative preferences.</li>
+            <li><strong>Photographic Media:</strong> Digital captures, raw photographs, and finished high-resolution edits created during your booked sessions.</li>
+            <li><strong>Billing &amp; Invoicing Details:</strong> Invoicing information and transaction records processed securely via reputable third-party processors. We do not store sensitive payment card numbers on our servers.</li>
+          </ul>
+
+          <h3>2. How We Use Your Information</h3>
+          <p>We use your information for legitimate photography business operations, including:</p>
+          <ul>
+            <li>Responding to shoot inquiries, consultation calls, and scheduling requests.</li>
+            <li>Conducting photography sessions, portrait shoots, and on-site coverage.</li>
+            <li>Professionally editing, color grading, and delivering digital client galleries.</li>
+            <li>Providing invoices, session preparation guides, and customer service updates.</li>
+            <li>Displaying authentic sample work in our portfolio and marketing materials (subject to client privacy agreements).</li>
+          </ul>
+
+          <h3>3. Client Privacy &amp; Portfolio Display</h3>
+          <p>We honor client discretion. For private personal commissions (such as private weddings, intimate portraits, or off-market real estate), clients may request in writing prior to their session that their images remain confidential and excluded from public marketing or online portfolio display. We strictly respect all agreed privacy preferences.</p>
+
+          <h3>4. Information Sharing &amp; Third Parties</h3>
+          <p>We do not sell, rent, or trade your personal information. Data is shared only with trusted service providers strictly necessary to perform operations, such as secure cloud-hosted client galleries, professional print fulfillment labs, and encrypted payment processors.</p>
+
+          <h3>5. Data Security</h3>
+          <p>We maintain industry-standard physical and technical safeguards to secure your personal information and digital image archives from unauthorized access or accidental loss. Client galleries are secured with unique direct links and optional PIN protection.</p>
+
+          <h3>6. Contact Information</h3>
+          <p>If you have any questions about this Privacy Policy, please contact:</p>
+          <div class="legal-contact-box">
+            <strong>Arron McCrory Photography</strong><br>
+            <span>Orange County &amp; Los Angeles, California</span><br>
+            <span>Phone: <a href="tel:+19493066039">(949) 306-6039</a></span><br>
+            <span>Email: <a href="mailto:arronmccrory@gmail.com">arronmccrory@gmail.com</a></span>
+          </div>
+        </article>
+
+        <!-- Terms of Service Panel -->
+        <article class="legal-panel" id="termsPanel" role="tabpanel" aria-labelledby="tabTermsBtn">
+          <h2>Terms of Service</h2>
+          <p class="legal-meta">Effective Date: October 15, 2026</p>
+          <p>Welcome to Arron McCrory Photography. By using our website, submitting an inquiry, or booking photography services, you agree to comply with and be bound by the following Terms of Service.</p>
+
+          <h3>1. Booking, Retainers &amp; Confirmations</h3>
+          <p>Shoot dates and times are secured only after mutual consultation, written confirmation, and receipt of the agreed non-refundable booking retainer. Dates cannot be held without a confirmed retainer.</p>
+
+          <h3>2. Payment Terms</h3>
+          <p>The remaining session or event balance must be paid in full on or prior to the scheduled shoot date (or according to the payment schedule specified in your contract). Final high-resolution digital galleries are delivered once full payment is cleared.</p>
+
+          <h3>3. Rescheduling &amp; Inclement Weather</h3>
+          <ul>
+            <li><strong>Portraits &amp; Headshots:</strong> Please provide at least 48 hours notice for rescheduling. Retainers may be applied to a mutually convenient future date within 6 months.</li>
+            <li><strong>Weather Conditions:</strong> For outdoor shoots (weddings, headshots, real estate exteriors), sessions may be rescheduled without penalty due to hazardous or severe weather conditions at the photographer's discretion.</li>
+            <li><strong>Cancellations:</strong> Because booked dates prevent other client commissions, retainers are non-refundable upon client cancellation.</li>
+          </ul>
+
+          <h3>4. Deliverables &amp; Turnaround Times</h3>
+          <ul>
+            <li><strong>Professional Headshots:</strong> Delivered within 2–4 business days via secure digital download.</li>
+            <li><strong>Real Estate Photography:</strong> Delivered within 24–48 hours for MLS listing readiness.</li>
+            <li><strong>Weddings &amp; Events:</strong> Full gallery delivery within 4–6 weeks.</li>
+            <li>All deliverables consist of hand-curated, professionally color-graded high-resolution JPEG files. Proprietary raw camera files are not distributed.</li>
+          </ul>
+
+          <h3>5. Copyright &amp; Usage Licenses</h3>
+          <ul>
+            <li><strong>Copyright:</strong> Arron McCrory Photography retains full, exclusive copyright to all photographs created under United States Copyright Law.</li>
+            <li><strong>Personal Use License:</strong> Clients receive a perpetual, non-exclusive license for personal printing, digital sharing, and self-promotion (e.g., LinkedIn, personal websites). Images may not be sold or sublicensed to commercial third parties without written authorization.</li>
+            <li><strong>Real Estate Commercial License:</strong> Real estate clients receive a commercial marketing license to advertise the property across MLS, listings, websites, flyers, and social media for the active duration of the listing.</li>
+          </ul>
+
+          <h3>6. Limitation of Liability</h3>
+          <p>In the event that the photographer is unable to perform services due to sudden illness, emergency, equipment failure, or circumstances beyond reasonable control, liability is strictly limited to a full refund of all monies paid for the unperformed services.</p>
+
+          <h3>7. Governing Law</h3>
+          <p>These terms and any related agreements are governed by and construed in accordance with the laws of the State of California.</p>
+
+          <h3>8. Contact Us</h3>
+          <div class="legal-contact-box">
+            <strong>Arron McCrory Photography</strong><br>
+            <span>Orange County &amp; Los Angeles, California</span><br>
+            <span>Phone: <a href="tel:+19493066039">(949) 306-6039</a></span><br>
+            <span>Email: <a href="mailto:arronmccrory@gmail.com">arronmccrory@gmail.com</a></span>
+          </div>
+        </article>
+      </div>
+
+      <div class="legal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" id="legalDoneBtn">Close</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Main JavaScript -->
   <script src="js/main.js"></script>

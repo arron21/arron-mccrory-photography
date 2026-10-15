@@ -198,4 +198,94 @@ document.addEventListener('DOMContentLoaded', () => {
       formSuccessMessage.style.display = 'none';
     });
   }
+
+  // 8. Legal Modal (Privacy Policy & Terms of Service)
+  const legalModal = document.getElementById('legalModal');
+  const legalBackdrop = document.getElementById('legalBackdrop');
+  const legalCloseBtn = document.getElementById('legalCloseBtn');
+  const legalDoneBtn = document.getElementById('legalDoneBtn');
+  const openPrivacyBtn = document.getElementById('openPrivacyBtn');
+  const openTermsBtn = document.getElementById('openTermsBtn');
+  const tabPrivacyBtn = document.getElementById('tabPrivacyBtn');
+  const tabTermsBtn = document.getElementById('tabTermsBtn');
+  const privacyPanel = document.getElementById('privacyPanel');
+  const termsPanel = document.getElementById('termsPanel');
+
+  function switchLegalTab(tab) {
+    if (tab === 'privacy') {
+      if (tabPrivacyBtn) {
+        tabPrivacyBtn.classList.add('active');
+        tabPrivacyBtn.setAttribute('aria-selected', 'true');
+      }
+      if (tabTermsBtn) {
+        tabTermsBtn.classList.remove('active');
+        tabTermsBtn.setAttribute('aria-selected', 'false');
+      }
+      if (privacyPanel) privacyPanel.classList.add('active');
+      if (termsPanel) termsPanel.classList.remove('active');
+    } else {
+      if (tabTermsBtn) {
+        tabTermsBtn.classList.add('active');
+        tabTermsBtn.setAttribute('aria-selected', 'true');
+      }
+      if (tabPrivacyBtn) {
+        tabPrivacyBtn.classList.remove('active');
+        tabPrivacyBtn.setAttribute('aria-selected', 'false');
+      }
+      if (termsPanel) termsPanel.classList.add('active');
+      if (privacyPanel) privacyPanel.classList.remove('active');
+    }
+    const legalBody = document.querySelector('.legal-body');
+    if (legalBody) legalBody.scrollTop = 0;
+  }
+
+  function openLegalModal(tab) {
+    switchLegalTab(tab);
+    if (legalModal) {
+      legalModal.classList.add('active');
+      legalModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeLegalModal() {
+    if (legalModal) {
+      legalModal.classList.remove('active');
+      legalModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+  }
+
+  if (openPrivacyBtn) {
+    openPrivacyBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openLegalModal('privacy');
+    });
+  }
+
+  if (openTermsBtn) {
+    openTermsBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openLegalModal('terms');
+    });
+  }
+
+  if (tabPrivacyBtn) {
+    tabPrivacyBtn.addEventListener('click', () => switchLegalTab('privacy'));
+  }
+
+  if (tabTermsBtn) {
+    tabTermsBtn.addEventListener('click', () => switchLegalTab('terms'));
+  }
+
+  if (legalCloseBtn) legalCloseBtn.addEventListener('click', closeLegalModal);
+  if (legalBackdrop) legalBackdrop.addEventListener('click', closeLegalModal);
+  if (legalDoneBtn) legalDoneBtn.addEventListener('click', closeLegalModal);
+
+  // Close modal on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && legalModal && legalModal.classList.contains('active')) {
+      closeLegalModal();
+    }
+  });
 });
