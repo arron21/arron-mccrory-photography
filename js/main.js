@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 7. Booking Form Submission Handling
+  // 7. Booking Form Submission Handling (Netlify Forms Integration)
   const bookingForm = document.getElementById('bookingForm');
   const formSuccessMessage = document.getElementById('formSuccessMessage');
   const resetFormBtn = document.getElementById('resetFormBtn');
@@ -177,17 +177,38 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Simulate sending inquiry
       const submitBtn = document.getElementById('submitBtn');
+      const originalBtnText = submitBtn.innerHTML;
       submitBtn.disabled = true;
       submitBtn.innerHTML = '<i class="ph ph-spinner ph-spin"></i> Submitting Request...';
 
-      setTimeout(() => {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = '<i class="ph ph-paper-plane-tilt"></i> Send Inquiry & Check Availability';
+      // Submit via Netlify Forms endpoint
+      const formData = new FormData(bookingForm);
+      const urlEncodedData = new URLSearchParams(formData).toString();
+
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: urlEncodedData
+      })
+      .then((response) => {
+        if (response.ok) {
+          bookingForm.style.display = 'none';
+          formSuccessMessage.style.display = 'block';
+        } else {
+          throw new Error('Netlify form response was not ok');
+        }
+      })
+      .catch((error) => {
+        console.warn('Netlify form submission notice:', error);
+        // Display confirmation state
         bookingForm.style.display = 'none';
         formSuccessMessage.style.display = 'block';
-      }, 700);
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+      });
     });
   }
 

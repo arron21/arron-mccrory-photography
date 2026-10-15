@@ -652,7 +652,11 @@
 
       <!-- Booking Form -->
       <div class="contact-form-panel">
-        <form id="bookingForm" class="booking-form" novalidate>
+        <form id="bookingForm" name="booking" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="booking-form" novalidate>
+          <input type="hidden" name="form-name" value="booking">
+          <div style="display: none;" aria-hidden="true">
+            <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+          </div>
           <div class="form-row">
             <div class="form-group">
               <label for="fullName">Your Full Name *</label>
