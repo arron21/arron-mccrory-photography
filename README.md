@@ -21,7 +21,7 @@ A modern, responsive, high-converting portfolio website crafted for professional
    - Built-in **Full-Screen Lightbox Modal** with title, description, and direct shoot inquiry button.
 3. **Specialty Quick-Jump Cards**: Immediate overview in the hero area that filters the gallery with one click.
 4. **Transparent Packages & Pricing**:
-   - Pre-configured package tiers for **Wedding Story** and **Real Estate Showcase** (Graduation and Newborn tiers safely staged).
+   - Pre-configured package tiers for **Wedding Story**, **Real Estate Showcase**, and **Professional Headshots** (Graduation and Newborn tiers safely staged).
    - Clicking a package auto-populates the booking form with that specific shoot type.
 5. **Photographer Bio & Trust Factors**: Insurance info, rapid turnaround guarantee, and warm introductory story.
 6. **Client Testimonials**: Verified client reviews from realtors, graduates, and new parents.
