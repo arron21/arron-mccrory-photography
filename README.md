@@ -9,20 +9,19 @@ A modern, responsive, high-converting portfolio website crafted for professional
 - **Weddings & Elopements** (Candid emotions, garden celebrations, romantic storytelling)
 - **Professional Headshots & Branding** (Executive portraits, creative editorial styling)
 - **Real Estate Photography** (MLS ready, architecture, HDR twilight & interiors)
-- **Graduation Photos** (Senior portraits, campus celebrations, cap & gown)
-- **Baby & Newborn Photo Shoots** (Milestones, cozy studio & lifestyle sessions)
+*(Note: Graduation and Newborn packages & galleries are staged and ready to be toggled on when photos are available)*
 
 ---
 
 ## 📸 Key Features
 
-1. **Editorial Hero Section**: Catchy headline, trust metrics (450+ properties, 300+ grads, 5.0 rating), and direct booking call-to-actions.
+1. **Editorial Hero Section**: Catchy headline, trust metrics (100+ weddings/shoots, 450+ properties, 5.0 rating), and direct booking call-to-actions.
 2. **Interactive Filterable Portfolio**:
-   - Filter by **All Works**, **Real Estate**, **Graduation**, or **Baby & Newborn**.
+   - Filter by **All Works**, **Weddings**, **Headshots**, and **Real Estate**.
    - Built-in **Full-Screen Lightbox Modal** with title, description, and direct shoot inquiry button.
 3. **Specialty Quick-Jump Cards**: Immediate overview in the hero area that filters the gallery with one click.
 4. **Transparent Packages & Pricing**:
-   - Pre-configured package tiers for Weddings, Real Estate, Graduation, and Newborns.
+   - Pre-configured package tiers for **Wedding Story** and **Real Estate Showcase** (Graduation and Newborn tiers safely staged).
    - Clicking a package auto-populates the booking form with that specific shoot type.
 5. **Photographer Bio & Trust Factors**: Insurance info, rapid turnaround guarantee, and warm introductory story.
 6. **Client Testimonials**: Verified client reviews from realtors, graduates, and new parents.
