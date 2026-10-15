@@ -874,6 +874,15 @@ button, input, select, textarea {
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(212, 163, 115, 0.25), rgba(20, 24, 31, 0.9));
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
 }
 
 .client-info strong {
